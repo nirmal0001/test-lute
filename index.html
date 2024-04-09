@@ -5,6 +5,7 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
       <script>
           if (window.Telegram.WebApp.initData != ''){
+            window.Telegram.WebApp.expand();
             window.addEventListener('load', function() {
                     setTimeout(function() {
                       console.log('triggerd')
