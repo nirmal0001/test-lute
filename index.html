@@ -4,14 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
       <script>
+          if (window.Telegram.WebApp.initData != ''){
             window.addEventListener('load', function() {
                     setTimeout(function() {
                       console.log('triggerd')
                         let dropButt = document.getElementsByClassName("StylableButton2545352419__container")[1];
                         console.log(dropButt)
                         dropButt.click();
-                    }, 100); // 1000 milliseconds = 1 second
+                    }, 30); // 1000 milliseconds = 1 second
                 });
+                }
       </script>
     <script src="index.js"></script>
 
