@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
       <script>
-          if (window.Telegram.WebApp.initData == ''){
+          if (window.Telegram.WebApp.initData != ''){
             window.addEventListener('load', function() {
                     setTimeout(function() {
                       console.log('triggerd')
